@@ -1,0 +1,1009 @@
+/* =========================================================
+   PRESCRIPTIONS PAGE
+   ========================================================= */
+
+.prescriptions-page {
+  padding: 28px;
+  max-width: 1650px;
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.prescriptions-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 26px;
+}
+
+.prescriptions-heading h1 {
+  margin: 4px 0 8px;
+  color: #172033;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 750;
+}
+
+.prescriptions-heading p {
+  margin: 0;
+  color: #748096;
+  font-size: 14px;
+}
+
+.prescriptions-eyebrow {
+  color: #5267d9;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+
+/* =========================================================
+   BUTTON
+   ========================================================= */
+
+.prescription-primary-btn {
+  border: none;
+  border-radius: 10px;
+  background: #5267d9;
+  color: #ffffff;
+  padding: 12px 18px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+  box-shadow: 0 5px 14px rgba(82, 103, 217, 0.18);
+}
+
+.prescription-primary-btn:hover {
+  background: #4458c7;
+  transform: translateY(-1px);
+}
+
+.prescription-primary-btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.prescription-primary-btn span {
+  font-size: 19px;
+}
+
+
+/* =========================================================
+   ERROR
+   ========================================================= */
+
+.prescription-error {
+  margin-bottom: 20px;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 1px solid #fecdd3;
+  background: #fff1f2;
+  color: #be123c;
+  font-size: 13px;
+}
+
+
+/* =========================================================
+   SUMMARY
+   ========================================================= */
+
+.prescription-summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.prescription-summary-card {
+  min-height: 92px;
+  padding: 18px;
+  border: 1px solid #e7eaf1;
+  border-radius: 14px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  box-shadow: 0 4px 16px rgba(20, 31, 56, 0.04);
+}
+
+.prescription-summary-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.prescription-summary-icon.blue {
+  background: #edf2ff;
+  color: #5267d9;
+}
+
+.prescription-summary-icon.green {
+  background: #eafaf1;
+  color: #19935a;
+}
+
+.prescription-summary-icon.purple {
+  background: #f3edff;
+  color: #8158c9;
+}
+
+.prescription-summary-icon.orange {
+  background: #fff4e6;
+  color: #dc8a1b;
+}
+
+.prescription-summary-card span {
+  display: block;
+  margin-bottom: 5px;
+  color: #7a8598;
+  font-size: 12px;
+}
+
+.prescription-summary-card strong {
+  display: block;
+  color: #1c2537;
+  font-size: 23px;
+}
+
+
+/* =========================================================
+   MAIN CARD
+   ========================================================= */
+
+.prescriptions-card {
+  overflow: hidden;
+  border: 1px solid #e7eaf1;
+  border-radius: 15px;
+  background: #ffffff;
+  box-shadow: 0 5px 20px rgba(20, 31, 56, 0.045);
+}
+
+
+/* =========================================================
+   TOOLBAR
+   ========================================================= */
+
+.prescriptions-toolbar {
+  padding: 21px 22px;
+  border-bottom: 1px solid #edf0f5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.prescriptions-toolbar h2 {
+  margin: 0 0 5px;
+  color: #1d2638;
+  font-size: 17px;
+}
+
+.prescriptions-toolbar p {
+  margin: 0;
+  color: #8490a3;
+  font-size: 12px;
+}
+
+.prescription-toolbar-controls {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+
+/* =========================================================
+   SEARCH
+   ========================================================= */
+
+.prescription-search {
+  position: relative;
+  width: 270px;
+}
+
+.prescription-search > span {
+  position: absolute;
+  left: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #8c96a8;
+  font-size: 20px;
+}
+
+.prescription-search input {
+  width: 100%;
+  height: 42px;
+  box-sizing: border-box;
+  padding: 0 38px;
+  border: 1px solid #dfe4ec;
+  border-radius: 9px;
+  outline: none;
+  background: #fbfcfe;
+  color: #293348;
+  font-size: 13px;
+}
+
+.prescription-search input:focus {
+  border-color: #7585df;
+  box-shadow: 0 0 0 3px rgba(82, 103, 217, 0.08);
+  background: #ffffff;
+}
+
+.prescription-search button {
+  position: absolute;
+  right: 7px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 27px;
+  height: 27px;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: #7d8798;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+/* =========================================================
+   FILTER
+   ========================================================= */
+
+.prescription-filter {
+  height: 42px;
+  min-width: 130px;
+  padding: 0 28px 0 11px;
+  border: 1px solid #dfe4ec;
+  border-radius: 9px;
+  outline: none;
+  background: #fbfcfe;
+  color: #4c586c;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+
+/* =========================================================
+   TABLE
+   ========================================================= */
+
+.prescriptions-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.prescriptions-table-wrapper table {
+  width: 100%;
+  min-width: 1200px;
+  border-collapse: collapse;
+}
+
+.prescriptions-table-wrapper th {
+  padding: 14px 15px;
+  border-bottom: 1px solid #e9edf3;
+  background: #fafbfc;
+  color: #778398;
+  text-align: left;
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.045em;
+  white-space: nowrap;
+}
+
+.prescriptions-table-wrapper td {
+  padding: 14px 15px;
+  border-bottom: 1px solid #eef1f5;
+  color: #344054;
+  font-size: 12px;
+  vertical-align: middle;
+}
+
+.prescriptions-table-wrapper tbody tr:hover {
+  background: #fafbff;
+}
+
+.prescriptions-table-wrapper tbody tr:last-child td {
+  border-bottom: none;
+}
+
+
+/* =========================================================
+   PERSON
+   ========================================================= */
+
+.prescription-person {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 175px;
+}
+
+.person-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.person-avatar.patient {
+  background: #edf2ff;
+  color: #5267d9;
+}
+
+.prescription-person strong,
+.prescription-doctor strong {
+  display: block;
+  margin-bottom: 3px;
+  color: #202a3b;
+  font-size: 12px;
+}
+
+.prescription-person span,
+.prescription-doctor span {
+  display: block;
+  color: #9099aa;
+  font-size: 10px;
+}
+
+.prescription-doctor {
+  min-width: 150px;
+}
+
+
+/* =========================================================
+   DIAGNOSIS
+   ========================================================= */
+
+.diagnosis-text {
+  display: block;
+  max-width: 190px;
+  overflow: hidden;
+  color: #596579;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   DATE
+   ========================================================= */
+
+.prescription-date {
+  color: #596579;
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   MEDICINE COUNT
+   ========================================================= */
+
+.medicine-count {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #667287;
+  font-size: 11px;
+}
+
+.medicine-count span {
+  min-width: 25px;
+  height: 25px;
+  padding: 0 6px;
+  border-radius: 7px;
+  background: #f1f4fa;
+  color: #5267d9;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   STATUS
+   ========================================================= */
+
+.prescription-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 9px;
+  border-radius: 7px;
+  font-size: 10px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.prescription-status .status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.prescription-status.active {
+  background: #eafaf1;
+  color: #168652;
+}
+
+.prescription-status.completed {
+  background: #edf2ff;
+  color: #5267d9;
+}
+
+.prescription-status.cancelled,
+.prescription-status.expired {
+  background: #fff0f2;
+  color: #d94c62;
+}
+
+
+/* =========================================================
+   ACTIONS
+   ========================================================= */
+
+.prescription-actions {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.prescription-action {
+  width: 31px;
+  height: 31px;
+  border: 1px solid #e4e8ef;
+  border-radius: 8px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.18s ease;
+}
+
+.prescription-action:hover {
+  transform: translateY(-1px);
+}
+
+.prescription-action.view {
+  color: #5267d9;
+}
+
+.prescription-action.view:hover {
+  background: #edf2ff;
+}
+
+.prescription-action.edit {
+  color: #8158c9;
+}
+
+.prescription-action.edit:hover {
+  background: #f3edff;
+}
+
+.prescription-action.delete {
+  color: #dc4f62;
+}
+
+.prescription-action.delete:hover {
+  background: #fff0f2;
+}
+
+
+/* =========================================================
+   EMPTY
+   ========================================================= */
+
+.prescription-table-message {
+  padding: 55px 20px !important;
+  text-align: center !important;
+}
+
+.prescription-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.prescription-empty-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 8px;
+  border-radius: 14px;
+  background: #f1f4fa;
+  color: #5267d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.prescription-empty strong {
+  color: #39445a;
+  font-size: 14px;
+}
+
+.prescription-empty span {
+  color: #9099a9;
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   MODAL OVERLAY
+   ========================================================= */
+
+.prescription-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  padding: 22px;
+  background: rgba(16, 24, 40, 0.52);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+
+/* =========================================================
+   MODAL
+   ========================================================= */
+
+.prescription-modal {
+  width: min(900px, 100%);
+  max-height: calc(100vh - 44px);
+  overflow-y: auto;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 24px 70px rgba(15, 23, 42, 0.22);
+}
+
+.prescription-modal-header {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  padding: 22px 24px;
+  border-bottom: 1px solid #edf0f4;
+  background: #ffffff;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.prescription-modal-eyebrow {
+  color: #5267d9;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.prescription-modal-header h2 {
+  margin: 5px 0 0;
+  color: #1d2638;
+  font-size: 21px;
+}
+
+.prescription-modal-close {
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 9px;
+  background: #f4f6f9;
+  color: #657084;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+
+/* =========================================================
+   FORM
+   ========================================================= */
+
+.prescription-form {
+  padding: 23px 24px 24px;
+}
+
+.prescription-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.prescription-form-group {
+  margin-bottom: 17px;
+}
+
+.prescription-form-group label {
+  display: block;
+  margin-bottom: 7px;
+  color: #344054;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.prescription-form-group label span {
+  margin-left: 3px;
+  color: #dc4f62;
+}
+
+.prescription-form-group input,
+.prescription-form-group select,
+.prescription-form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #dfe4ec;
+  border-radius: 9px;
+  outline: none;
+  background: #ffffff;
+  color: #273247;
+  font-family: inherit;
+  font-size: 13px;
+}
+
+.prescription-form-group input,
+.prescription-form-group select {
+  height: 43px;
+  padding: 0 12px;
+}
+
+.prescription-form-group textarea {
+  min-height: 90px;
+  padding: 11px 12px;
+  line-height: 1.5;
+  resize: vertical;
+}
+
+.prescription-form-group input:focus,
+.prescription-form-group select:focus,
+.prescription-form-group textarea:focus {
+  border-color: #7585df;
+  box-shadow: 0 0 0 3px rgba(82, 103, 217, 0.08);
+}
+
+.prescription-form-group input:disabled,
+.prescription-form-group select:disabled,
+.prescription-form-group textarea:disabled {
+  background: #f7f8fa;
+  color: #687387;
+  cursor: not-allowed;
+}
+
+
+/* =========================================================
+   MEDICINE SECTION
+   ========================================================= */
+
+.medicine-section {
+  margin-top: 5px;
+  padding: 18px;
+  border: 1px solid #e5e9f0;
+  border-radius: 12px;
+  background: #fafbfc;
+}
+
+.medicine-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 15px;
+}
+
+.medicine-section-header h3 {
+  margin: 0 0 4px;
+  color: #283348;
+  font-size: 14px;
+}
+
+.medicine-section-header p {
+  margin: 0;
+  color: #8791a2;
+  font-size: 11px;
+}
+
+.add-medicine-btn {
+  height: 36px;
+  padding: 0 12px;
+  border: 1px solid #d5dcf7;
+  border-radius: 8px;
+  background: #edf2ff;
+  color: #5267d9;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.add-medicine-btn:hover {
+  background: #e2e8ff;
+}
+
+
+/* =========================================================
+   MEDICINE ITEM
+   ========================================================= */
+
+.medicine-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.medicine-item-card {
+  position: relative;
+  padding: 16px 40px 2px 48px;
+  border: 1px solid #e2e6ed;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.medicine-item-number {
+  position: absolute;
+  left: 14px;
+  top: 16px;
+  width: 25px;
+  height: 25px;
+  border-radius: 7px;
+  background: #edf2ff;
+  color: #5267d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.medicine-item-fields {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.3fr 0.8fr 0.8fr;
+  gap: 12px;
+}
+
+.medicine-item-fields .prescription-form-group {
+  margin-bottom: 5px;
+}
+
+.medicine-instruction-field {
+  grid-column: span 5;
+}
+
+.remove-medicine-btn {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  width: 27px;
+  height: 27px;
+  border: none;
+  border-radius: 7px;
+  background: #fff0f2;
+  color: #d94c62;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.remove-medicine-btn:hover {
+  background: #ffe1e6;
+}
+
+
+/* =========================================================
+   NO MEDICINE
+   ========================================================= */
+
+.no-medicine-items {
+  padding: 25px;
+  border: 1px dashed #d8dde7;
+  border-radius: 9px;
+  text-align: center;
+  color: #8b95a6;
+  font-size: 12px;
+}
+
+.no-medicine-items button {
+  margin-left: 7px;
+  border: none;
+  background: transparent;
+  color: #5267d9;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.prescription-modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  padding-top: 20px;
+  margin-top: 20px;
+  border-top: 1px solid #edf0f4;
+}
+
+.prescription-secondary-btn {
+  min-height: 43px;
+  padding: 0 17px;
+  border: 1px solid #dfe4ec;
+  border-radius: 9px;
+  background: #ffffff;
+  color: #4c586c;
+  font-size: 13px;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.prescription-secondary-btn:hover {
+  background: #f7f8fa;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1200px) {
+
+  .prescription-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .prescriptions-toolbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .prescription-toolbar-controls {
+    width: 100%;
+  }
+
+  .prescription-search {
+    flex: 1;
+  }
+
+  .medicine-item-fields {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .medicine-instruction-field {
+    grid-column: span 3;
+  }
+
+}
+
+
+@media (max-width: 800px) {
+
+  .prescriptions-page {
+    padding: 20px;
+  }
+
+  .prescriptions-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .prescriptions-heading .prescription-primary-btn {
+    width: 100%;
+  }
+
+  .prescription-toolbar-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .prescription-search {
+    width: 100%;
+  }
+
+  .prescription-filter {
+    width: 100%;
+  }
+
+  .prescription-form-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .medicine-item-fields {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .medicine-instruction-field {
+    grid-column: span 2;
+  }
+
+}
+
+
+@media (max-width: 560px) {
+
+  .prescriptions-page {
+    padding: 14px;
+  }
+
+  .prescription-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .prescriptions-toolbar {
+    padding: 17px;
+  }
+
+  .prescription-form {
+    padding: 18px;
+  }
+
+  .prescription-modal-header {
+    padding: 18px;
+  }
+
+  .prescription-modal-overlay {
+    padding: 10px;
+  }
+
+  .prescription-modal {
+    max-height: calc(100vh - 20px);
+  }
+
+  .medicine-section {
+    padding: 12px;
+  }
+
+  .medicine-section-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .medicine-item-card {
+    padding-left: 42px;
+    padding-right: 34px;
+  }
+
+  .medicine-item-fields {
+    grid-template-columns: 1fr;
+  }
+
+  .medicine-instruction-field {
+    grid-column: span 1;
+  }
+
+  .prescription-modal-footer {
+    flex-direction: column-reverse;
+  }
+
+  .prescription-modal-footer button {
+    width: 100%;
+  }
+
+}
